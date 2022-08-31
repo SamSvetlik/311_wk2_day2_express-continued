@@ -8,17 +8,11 @@ let counter = 0
 const app = express();
 const port = process.env.PORT || 4000;
 
-app.use(bodyParser.json()
-)
+app.use(bodyParser.json())
 app.use(comments)
 app.use(contacts)
 app.use(products)
 app.use(vehicles)
-// .get routes
-
-
-
-
 
 
 app.listen(port, () => {
