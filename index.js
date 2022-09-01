@@ -8,6 +8,7 @@ let counter = 0
 const app = express();
 const port = process.env.PORT || 4000;
 
+app.use(express.static('./public'))
 app.use(bodyParser.json())
 app.use(comments)
 app.use(contacts)
